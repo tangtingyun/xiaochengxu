@@ -42,32 +42,32 @@ Page({
     });
   },
   onLoad: function() {
-    me = this;
-    wx.showLoading({
-      title: '加载中...',
-    });
-    Promise.all([this.getBanner(), this.getToday()])
-      .then(([banner, body]) => {
-        wx.hideLoading();
-        console.log(banner);
-        console.log("====================");
-        console.log(body);
-        let data = body.data.results;
-        var list = [];
-        for (var prop in data) {
-          let realData = data[prop]
-          list = list.concat(realData);
-        }
-        if (banner.data.results) {
-          me.setData({
-            imgUrls: banner.data.results,
-            todayList: list
-          });
-        }
-      })
-      .catch((error) => {
-        wx.hideLoading();
-      });
+    // me = this;
+    // wx.showLoading({
+    //   title: '加载中...',
+    // });
+    // Promise.all([this.getBanner(), this.getToday()])
+    //   .then(([banner, body]) => {
+    //     wx.hideLoading();
+    //     console.log(banner);
+    //     console.log("====================");
+    //     console.log(body);
+    //     let data = body.data.results;
+    //     var list = [];
+    //     for (var prop in data) {
+    //       let realData = data[prop]
+    //       list = list.concat(realData);
+    //     }
+    //     if (banner.data.results) {
+    //       me.setData({
+    //         imgUrls: banner.data.results,
+    //         todayList: list
+    //       });
+    //     }
+    //   })
+    //   .catch((error) => {
+    //     wx.hideLoading();
+    //   });
   },
   onPullDownRefresh: function() {}
 })

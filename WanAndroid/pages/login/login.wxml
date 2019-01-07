@@ -1,0 +1,7 @@
+<image class="loginbg" mode='widthFix' src="../../images/img_login_bg.png"></image>
+<view class='loginView'>
+  <input class='input' placeholder='请输入用户名' bindinput='loginusername'></input>
+  <input class='input' placeholder='请输入密码' bindinput='loginpassword'></input>
+  <view class='loginbtn' bindtap='clicklogin'>登陆</view>
+  <text class='text_f_w_black16' style='color:#fff;' bindtap='register'>立即注册</text>
+</view>

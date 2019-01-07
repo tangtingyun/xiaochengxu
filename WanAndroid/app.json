@@ -1,8 +1,10 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/me/me"
+    "pages/me/me",
+    "pages/register/register"
   ],
   "tabBar": {
     "list": [
@@ -19,10 +21,10 @@
         "selectedIconPath": "images/img_hot_click.png"
       },
       {
-        "pagePath":"pages/me/me",
-        "text":"我的",
-        "iconPath":"images/img_me.png",
-        "selectedIconPath":"images/img_me_click.png"
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/img_me.png",
+        "selectedIconPath": "images/img_me_click.png"
       }
     ]
   },
