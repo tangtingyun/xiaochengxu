@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view>
+  <view class="viewpager">
+    <swiper indicator-dots='true'>
+      <swiper-item wx:for="{{imgUrls}}" wx:key="{{item._id}}">
+        <image class='viewpager-item' src="{{item.url}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class='today-list'>
+    <view wx:for="{{todayList}}" wx:key="item._id">
+      <view class='item-container'>
+        <image wx:if="{{item.images}}" class='item-image' src='{{item.images[0]}}'></image>
+        <view class='item-desc'>{{item.desc}}</view>
+      </view>
+    </view>
+  </view>
+</view>

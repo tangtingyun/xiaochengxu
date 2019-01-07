@@ -1,0 +1,13 @@
+.item-desc {
+  text-indent: 20px;
+}
+
+.item-image {
+  width: 100%;
+}
+
+.item-container {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+}
