@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/login/login",
     "pages/index/index",
     "pages/logs/logs",
     "pages/me/me",
-    "pages/register/register"
+    "pages/register/register",
+    "pages/login/login"
   ],
   "tabBar": {
     "list": [
@@ -33,5 +33,6 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
